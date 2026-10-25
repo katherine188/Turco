@@ -5,7 +5,7 @@ Primer examen parcial de *Programación para Dispositivos Móviles* (Ingeniería
 
 - **Application id:** `com.katherinealvarez.turco`
 - **Nombre visible:** Turco
-- **Flutter:** versión estable con Dart `^3.13.4` (anota aquí la salida de `flutter --version` con la que compilaste).
+- **Flutter:** versión estable con Dart `^3.13.4` 
 - **Arquitectura:** MVVM con `ChangeNotifier` y `ListenableBuilder` (sin paquetes externos de estado ni de almacenamiento).
 - **Navegación:** `go_router` con `StatefulShellRoute.indexedStack`.
 
@@ -23,8 +23,6 @@ flutter test           # pruebas de las reglas de negocio
 flutter build apk --release
 # salida: build/app/outputs/flutter-apk/app-release.apk
 ```
-
-El APK no se versiona (`build/` está ignorado): súbelo a **Releases** de GitHub.
 
 ## Estructura de carpetas
 
@@ -50,8 +48,3 @@ entrega/                     material de entrega
 
 `/agenda?estilista=ID` · `/clientes` · `/servicios` · `/estilistas` · `/turno/nuevo` (extra: `TurnoInicial`) · `/turno/:id` · `/turno/:id/editar`
 
-## Notas
-
-- La fuente Poppins SemiBold (peso 600) debe añadirse como `assets/fonts/Poppins-SemiBold.ttf` y apuntarse en `pubspec.yaml`
-  (ahora el peso 600 usa Bold como reemplazo temporal).
-- Las imágenes de `assets/images/categorias` y `avatares` son las del diseño; sustitúyelas por las exportadas del `.pen` conservando el nombre.
